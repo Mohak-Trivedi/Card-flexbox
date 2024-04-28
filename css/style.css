@@ -1,8 +1,16 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
     width: 90%;
     margin: 0 auto;
     max-width: 800px;
-    background-color: #111D4A;
+    background: #111d4a;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -10,7 +18,11 @@
 
 .card-img {
     object-fit: cover;
-    height: 150px;
+    flex-basis: 200px;
+    min-height: 0; 
+    min-width: 0; 
+
+    background: yellow;
 }
 
 .card-content {
@@ -24,16 +36,14 @@
 }
 
 .card-title {
+    color: #05cbe9;
     font-size: 1.75rem;
-    color: #05CBE9;
-    font-weight: 700;
     margin: 0;
 }
 
 .card-body {
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.6;
 }
 
@@ -44,24 +54,51 @@
     margin-top: 3em;
 }
 
+@media (min-width: 600px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .card-img {
+        height: 300px;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-title {
+        font-size: 2.25rem;
+    }
+
+    .card-body {
+        font-size: 1.125rem;
+    }
+
+    .card-footer {
+        margin-top: auto;
+    }
+}
+
 .card-btn {
     font-size: 1.25rem;
-    background-color: #05CBE9;
-    color: #111D4A;
+    background: #05cbe9;
+    color: #111d4a;
+    text-decoration: none;
     font-weight: 700;
     padding: .35em 1em;
-    text-decoration: none;
     letter-spacing: 1px;
 }
 
 .card-read-time {
-    margin-bottom: 0;
+    margin: 0;
     opacity: .6;
     line-height: 1;
 }
 
 .card-read-time span {
-    display: block;
     font-weight: 700;
-    font-size: 1.25em; /* specific use case for using em in font-size */
+    display: block;
+    font-size: 1.25em;
 }
