@@ -1,4 +1,67 @@
-html, body {
+.card {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #111D4A;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    object-fit: cover;
+    height: 150px;
+}
+
+.card-content {
+    padding: 1em;
+}
+
+.card-title,
+.card-read-time,
+.card-btn {
+    font-family: 'Blinker', sans-serif;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    color: #05CBE9;
+    font-weight: 700;
     margin: 0;
-    padding: 0;
+}
+
+.card-body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 3em;
+}
+
+.card-btn {
+    font-size: 1.25rem;
+    background-color: #05CBE9;
+    color: #111D4A;
+    font-weight: 700;
+    padding: .35em 1em;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.card-read-time {
+    margin-bottom: 0;
+    opacity: .6;
+    line-height: 1;
+}
+
+.card-read-time span {
+    display: block;
+    font-weight: 700;
+    font-size: 1.25em; /* specific use case for using em in font-size */
 }
