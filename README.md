@@ -1,4 +1,4 @@
-# Card
+# Flexbox Card
 
 Built a responsive card component using HTML and CSS to practice Flexbox.
 
